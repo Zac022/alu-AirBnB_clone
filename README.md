@@ -35,7 +35,3 @@ Update the name of a User:
 
 (hbnb) update User +25078.... name "name"
 
-Authors
-
-Isaac Rudasingwa - i.rudasingwa@alustudent.com
-Jean Robert Gatwaza - gatwazarobert177@gmail.com
