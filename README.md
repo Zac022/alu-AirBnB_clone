@@ -22,14 +22,15 @@ To see a list of available commands, enter:
 
 (hbnb) help
 Examples
+
 Create a new User:
 
-
 (hbnb) create User
+
 Retrieve a Place by id:
 
-
 (hbnb) show Place 1234-5678-
+
 Update the name of a User:
 
 (hbnb) update User +25078.... name "name"
