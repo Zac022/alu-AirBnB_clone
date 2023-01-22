@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 import unittest
 from datetime import datetime
-from models.base_model import BaseModel
-
-
+from base_model import BaseModel
 
 class TestBaseModel(unittest.TestCase):
     def setUp(self):
@@ -26,6 +24,6 @@ class TestBaseModel(unittest.TestCase):
         self.assertEqual(bm_dict["name"], self.bm.name)
         self.assertEqual(bm_dict["my_number"], self.bm.my_number)
 
-if __name__ == "__main__":
-    unittest.main()
+    def test_str(self):
+        s_bm = str(
 
