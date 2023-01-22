@@ -8,8 +8,9 @@ class BaseModel:
         self.created_at = datetime.datetime.now()
         self.updated_at = datetime.datetime.now()
 
-    def _str_(self):
-        return "[{}] ({}) {}".format(self._class.name, self.id, self.dict_)
+    def __str__(self):
+    return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
+
 
     def save(self):
         self.updated_at = datetime.datetime.now()
