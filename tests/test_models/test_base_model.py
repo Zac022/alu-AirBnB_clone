@@ -25,5 +25,8 @@ class TestBaseModel(unittest.TestCase):
         self.assertEqual(bm_dict["my_number"], self.bm.my_number)
 
     def test_str(self):
-        s_bm = str(
+        s_bm = str(self.bm)
+        self.assertEqual(s_bm.split(" ")[0], "[BaseModel]")
+        self.assertEqual(s_bm.split(" ")[1], "({})".format(self.bm.id))
+        self.assertEqual(eval(s_bm.split(" ")[2]), self.bm.__dict__)
 
