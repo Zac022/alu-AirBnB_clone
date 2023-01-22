@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import uuid
 import datetime
-
+from models.base_model import BaseModel
 class BaseModel:
     def __init__(self, *args, **kwargs):
         if kwargs:
